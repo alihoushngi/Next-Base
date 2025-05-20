@@ -1,0 +1,25 @@
+{
+  "workbench.startupEditor": "readme",
+  "files.autoSave": "onFocusChange",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#27374D",
+    "titleBar.activeForeground": "#9DB2BF",
+    "titleBar.inactiveBackground": "#27374D",
+    "titleBar.inactiveForeground": "#9DB2BF",
+    "activityBar.background": "#27374D",
+    "statusBar.background": "#27374D",
+    "statusBar.foreground": "#9DB2BF",
+    "activityBar.foreground": "#DDE6ED",
+    "sideBar.background": "#282828",
+    "sideBar.foreground": "#DDE6ED",
+    "editor.background": "#282828",
+    "editor.foreground": "#DDE6ED",
+    "editorLineNumber.foreground": "#3a3a3a",
+    "editorCursor.foreground": "#ffffff",
+    "editorIndentGuide.background1": "#454545",
+    "tab.activeBackground": "#000000",
+    "tab.inactiveBackground": "#282828",
+    "tab.activeForeground": "#ffffff",
+    "tab.inactiveForeground": "#484848"
+  }
+}
