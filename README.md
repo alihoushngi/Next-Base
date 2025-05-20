@@ -1,6 +1,6 @@
 # 🚀 Next Base - Next.js Starter Project
 
-Welcome to **Next Base**, a powerful and developer-friendly boilerplate to jumpstart your Next.js projects with everything already configured — just clone and start building.
+Welcome to **Next Base**, a powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.
 
 > Built with [Next.js 13+](https://nextjs.org/), this starter includes all the essentials for a modern frontend workflow using TypeScript, TailwindCSS, Redux, Axios, and more.
 
@@ -139,7 +139,7 @@ npm run dev
 ## 👨‍💻 Author
 
 **Ali Hooshangi** – Frontend Developer  
-📫 aliihooshangi@gmail.com  
+📫 [aliihooshangi@gmail.com](mailto:aliihooshangi@gmail.com)
 🔗 [linkedin.com/in/alihoushangi](https://linkedin.com/in/alihoushangi)  
 💻 [github.com/alihoushngi](https://github.com/alihoushngi)
 
