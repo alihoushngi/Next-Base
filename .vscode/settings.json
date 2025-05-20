@@ -1,6 +1,5 @@
 {
-  "workbench.startupEditor": "readme",
-  "files.autoSave": "onFocusChange",
+  //  VSCODE COLOR CHANGE ____________________________
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#27374D",
     "titleBar.activeForeground": "#9DB2BF",
@@ -21,5 +20,57 @@
     "tab.inactiveBackground": "#282828",
     "tab.activeForeground": "#ffffff",
     "tab.inactiveForeground": "#484848"
-  }
+  },
+
+  //  START WITH README.MD FILE ____________________________
+  "workbench.startupEditor": "readme",
+
+  //  SAVE IN FOCUS CHANGE ____________________________
+  "files.autoSave": "onFocusChange",
+
+  //  EDITOR FORMAT ON SAVE ____________________________
+  "editor.formatOnSave": true,
+
+  //  ALIAS ROUTE ____________________________
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "path-intellisense.mappings": {
+    "@": "${workspaceRoot}/src"
+  },
+
+  //  ACTIVE LINT AND INTELLISENSE FOR TAILWINDCSS ____________________________
+  "tailwindCSS.includeLanguages": {
+    "plaintext": "html",
+    "javascript": "javascript",
+    "typescript": "typescript",
+    "typescriptreact": "typescriptreact",
+    "javascriptreact": "javascriptreact"
+  },
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass"],
+
+  //  ACTIVE ESLINT ____________________________
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  //  FONT AND DESIGN ____________________________
+  "editor.fontFamily": "Fira Code, JetBrains Mono, Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+
+  //  JSON SCHEMAS ____________________________
+  "json.schemas": [
+    {
+      "fileMatch": ["/tsconfig.json"],
+      "url": "http://json.schemastore.org/tsconfig"
+    },
+    {
+      "fileMatch": ["/.eslintrc.json"],
+      "url": "http://json.schemastore.org/eslintrc"
+    }
+  ]
 }
