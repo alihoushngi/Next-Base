@@ -25,52 +25,76 @@ Welcome to **Next Base**, a powerful and developer-friendly boilerplate to jumps
 ## 📁 Folder Structure
 
 ```bash
+
+public/
+├── images/
+├── icons/
+└── fonts/
+
 src/
-├── app/                 # App router (Next 13+)
-│   └── layout.tsx
-│   └── page.tsx
-│   └── api/
-├── pages/               # Page router support
-│   └── _app.tsx
-│   └── _document.tsx
-│   └── index.tsx
-│   └── about.tsx
-├── components/          # Reusable components
-│   ├── ui/              # UI elements like Button, Input
-│   ├── layout/          # Header, Footer, etc.
-│   └── shared/          # Common components (Card, Avatar)
-├── features/            # Feature-based structure
+├── app/                           # App routes, layouts, and route handlers (App Router)
+│   ├── layout.tsx                 # Root shared layout (e.g. header, footer, theme)
+│   ├── page.tsx                   # Home page ("/")
+│   ├── about/
+│   │   └── page.tsx               # About page
+│   ├── contact/
+│   │   ├── page.tsx               # Contact page
+│   ├── dashboard/                # Protected area with its own layout
+│   │   ├── layout.tsx            # Dashboard layout (e.g. sidebar)
+│   │   ├── page.tsx              # Dashboard landing page
+│   │   └── settings/
+│   │       ├── page.tsx          # Settings page
+│   │       ├── error.tsx         # Error boundary for this section
+│   │       └── not-found.tsx     # Custom 404 page only for this section
+│   ├── api/                      # API routes using Next.js route handlers
+│   │   ├── auth/
+│   │   │   └── login/route.ts    # Login API route
+│   │   │   └── register/route.ts # Register API route
+│   │   └── user/
+│   │       └── route.ts          # User data API route
+│   └── sitemap.xml/route.ts      # Dynamic sitemap for SEO
+
+├── components/                   # Reusable UI components
+│   ├── ui/                       # Buttons, inputs, forms, etc.
+│   ├── layout/                   # Header, Footer, Sidebar, etc.
+│   └── shared/                   # Shared components like Card, Avatar, Badge
+
+├── features/                     # Feature-based folder structure
 │   ├── auth/
-│   │   ├── components/
-│   │   ├── hooks/
-│   │   ├── authSlice.ts
-│   │   └── api.ts
-│   └── profile/
-│       ├── components/
-│       ├── hooks/
-│       ├── profileSlice.ts
-│       └── api.ts
-├── hooks/               # Custom hooks like useAxios, useDebounce
-├── lib/                 # Shared configs (e.g. axios.ts, dayjs.ts)
-├── store/               # Redux store and setup
-│   └── index.ts
-├── services/            # API service functions
-├── types/               # Global TypeScript types
-│   └── index.d.ts
-│   └── api.d.ts
-├── utils/               # Helper functions like formatDate, slugify
-├── constants/           # Static values (e.g. roles, messages)
+│   │   ├── components/           # Auth-specific UI (e.g. LoginForm)
+│   │   ├── hooks/                # Auth-specific custom hooks
+│   │   ├── services/             # Auth API logic (e.g. login, register)
+│   │   ├── types.ts              # Auth-related TypeScript types
+│   │   └── validation.ts         # Form validation schema for auth
+│   ├── blog/                     # Blog feature module
+
+├── hooks/                        # Global reusable custom React hooks
+
+├── lib/                          # Low-level libraries and utilities
+│   ├── axios.ts                  # Axios instance with interceptors
+│   ├── auth.ts                   # Authentication helper functions
+
+├── store/                        # Global state management (Redux, Zustand, etc.)
+
+├── services/                     # External API interaction logic
+│   ├── userService.ts            # User-related API functions
+
+├── types/                        # Global TypeScript types and interfaces
+│   ├── api.d.ts                  # API-specific types
+│   └── common.d.ts               # Shared/common types
+
+├── utils/                        # General utility functions (e.g. formatPhone, validateEmail)
+
+├── constants/                    # Constant values (e.g. roles, messages, routes)
 │   ├── roles.ts
 │   ├── messages.ts
 │   └── routes.ts
-├── middleware.ts        # Middlewares (e.g. auth guards)
-├── styles/              # Tailwind & global styles
-│   ├── globals.css
-│   └── tailwind.css
-└── assets/              # Static assets (images, icons, fonts)
-    ├── images/
-    ├── icons/
-    └── fonts/
+
+├── middleware.ts                 # App-wide middleware (e.g. auth, role-based access)
+
+├── styles/                       # Global CSS/Tailwind styles
+│   ├── globals.css               # Global styles (e.g. resets, base styles)
+│   └── tailwind.css              # Tailwind imports and customization
 ```
 
 ---
