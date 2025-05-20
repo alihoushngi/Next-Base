@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"prepare": "husky && husky install",
+		"prepare": "chmod +x .husky/pre-commit",
 		"lint:fix": "eslint --fix './**/*.{js,jsx,ts,tsx,json}'",
 		"format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
 		"staged:lint": "eslint --fix",
