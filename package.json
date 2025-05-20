@@ -7,15 +7,16 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "chmod +x .husky/pre-commit",
     "lint:fix": "eslint --fix './**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "staged:lint": "eslint --fix",
     "staged:format": "prettier ./ --write  --config ./.prettierrc"
   },
   "lint-staged": {
-    "./**/*.{js,jsx,ts,tsx,json}": "npm run staged:lint",
-    "./**/*.{js,jsx,ts,tsx,css,md,json}": "npm run staged:format"
+    "*.{js,jsx,ts,tsx,json,css,md}": [
+      "npm run staged:lint",
+      "npm run staged:format"
+    ]
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.8.2",
