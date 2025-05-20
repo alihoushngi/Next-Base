@@ -1,71 +1,81 @@
 {
-	"root": true,
-	"parser": "@typescript-eslint/parser",
-	"parserOptions": {
-		"ecmaVersion": "latest", // Allows using the latest ECMAScript features
-		"sourceType": "module", // Enables the use of imports
-		"ecmaFeatures": {
-			"jsx": true // Allows parsing JSX
-		},
-		"project": "./tsconfig.json" // Enables rules that require type information
-	},
-	"env": {
-		"browser": true, // Allows browser global variables like `window`
-		"node": true, // Allows Node.js global variables and Node.js scoping
-		"es2021": true // Enables ES2021 globals
-	},
-	"extends": [
-		"eslint:recommended", // Enables ESLint's recommended rules
-		"plugin:@typescript-eslint/recommended", // Enables recommended rules from @typescript-eslint
-		"plugin:@typescript-eslint/recommended-requiring-type-checking", // Additional rules that require type-checking
-		"plugin:react/recommended", // Enables recommended rules from eslint-plugin-react
-		"plugin:react-hooks/recommended", // Enforces best practices for React Hooks
-		"plugin:jsx-a11y/recommended", // Enforces accessibility best practices in JSX
-		"plugin:import/errors", // Reports missing or misspelled import paths
-		"plugin:import/warnings", // Additional import-related warnings
-		"plugin:import/typescript", // Supports TypeScript-specific import checks
-		"prettier" // Disables ESLint rules that conflict with Prettier
-	],
-	"plugins": [
-		"@typescript-eslint", // TypeScript-specific linting rules
-		"react", // React-specific linting rules
-		"react-hooks", // Linting rules for React Hooks
-		"jsx-a11y", // Linting for accessibility in JSX
-		"import" // Linting rules related to ES module imports
-	],
-	"rules": {
-		// Clean code improvements
-		"no-console": "warn", // Warns when console.* is used (log, warn, error, etc.)
-		"no-debugger": "warn", // Warns when debugger statements are used
-		"no-unused-vars": "off", // Disabled in favor of TypeScript-specific version
-		"@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }], // Warns about unused variables, but ignores ones starting with "_"
-		"react/prop-types": "off", // Turns off PropTypes since we use TypeScript for type checking
-		"react/react-in-jsx-scope": "off", // Turns off since React 17+ does not require React in scope when using JSX
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest", // Allows using the latest ECMAScript features
+    "sourceType": "module", // Enables the use of imports
+    "ecmaFeatures": {
+      "jsx": true // Allows parsing JSX
+    },
+    "project": "./tsconfig.json" // Enables rules that require type information
+  },
+  "env": {
+    "browser": true, // Allows browser global variables like `window`
+    "node": true, // Allows Node.js global variables and Node.js scoping
+    "es2021": true // Enables ES2021 globals
+  },
+  "extends": [
+    "eslint:recommended", // Enables ESLint's recommended rules
+    "plugin:@typescript-eslint/recommended", // Enables recommended rules from @typescript-eslint
+    "plugin:@typescript-eslint/recommended-requiring-type-checking", // Additional rules that require type-checking
+    "plugin:react/recommended", // Enables recommended rules from eslint-plugin-react
+    "plugin:react-hooks/recommended", // Enforces best practices for React Hooks
+    "plugin:jsx-a11y/recommended", // Enforces accessibility best practices in JSX
+    "plugin:import/errors", // Reports missing or misspelled import paths
+    "plugin:import/warnings", // Additional import-related warnings
+    "plugin:import/typescript", // Supports TypeScript-specific import checks
+    "prettier" // Disables ESLint rules that conflict with Prettier
+  ],
+  "plugins": [
+    "@typescript-eslint", // TypeScript-specific linting rules
+    "react", // React-specific linting rules
+    "react-hooks", // Linting rules for React Hooks
+    "jsx-a11y", // Linting for accessibility in JSX
+    "import" // Linting rules related to ES module imports
+  ],
+  "rules": {
+    // Clean code improvements
+    "no-console": "warn", // Warns when console.* is used (log, warn, error, etc.)
+    "no-debugger": "warn", // Warns when debugger statements are used
+    "no-unused-vars": "off", // Disabled in favor of TypeScript-specific version
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "argsIgnorePattern": "^_" }
+    ], // Warns about unused variables, but ignores ones starting with "_"
+    "react/prop-types": "off", // Turns off PropTypes since we use TypeScript for type checking
+    "react/react-in-jsx-scope": "off", // Turns off since React 17+ does not require React in scope when using JSX
 
-		// Safer & cleaner TypeScript
-		"@typescript-eslint/no-explicit-any": "warn", // Warns when the "any" type is used
-		"@typescript-eslint/explicit-module-boundary-types": "off", // Disables the requirement to explicitly define return types on functions
-		"@typescript-eslint/no-empty-interface": "warn", // Warns when empty interfaces are used
-		"@typescript-eslint/consistent-type-definitions": ["error", "interface"], // Enforces using `interface` instead of `type` for object types
+    // Safer & cleaner TypeScript
+    "@typescript-eslint/no-explicit-any": "warn", // Warns when the "any" type is used
+    "@typescript-eslint/explicit-module-boundary-types": "off", // Disables the requirement to explicitly define return types on functions
+    "@typescript-eslint/no-empty-interface": "warn", // Warns when empty interfaces are used
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"], // Enforces using `interface` instead of `type` for object types
 
-		// Import structure
-		"import/order": [
-			"warn",
-			{
-				"groups": ["builtin", "external", "internal", "parent", "sibling", "index"], // Orders imports by origin
-				"alphabetize": { "order": "asc", "caseInsensitive": true } // Alphabetical order for readability
-			}
-		]
-	},
-	"settings": {
-		"react": {
-			"version": "detect" // Automatically detects the React version
-		},
-		"import/resolver": {
-			"typescript": {}, // Helps import plugin resolve TypeScript paths
-			"node": {
-				"extensions": [".js", ".jsx", ".ts", ".tsx"] // Helps ESLint resolve modules with these extensions
-			}
-		}
-	}
+    // Import structure
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ], // Orders imports by origin
+        "alphabetize": { "order": "asc", "caseInsensitive": true } // Alphabetical order for readability
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detects the React version
+    },
+    "import/resolver": {
+      "typescript": {}, // Helps import plugin resolve TypeScript paths
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"] // Helps ESLint resolve modules with these extensions
+      }
+    }
+  }
 }
