@@ -74,9 +74,9 @@ src/
 │   ├── axios.ts                  # Axios instance with interceptors
 │   ├── auth.ts                   # Authentication helper functions
 
-├── redux/                        # Global state management
-│   ├── features/                  # features folder for add
-│   ├── store.ts                   # create your store
+├── store/                        # Global state management
+│   ├── index.ts                  # store file
+│   ├── slice/                    # folder for create slices
 
 ├── services/                     # External API interaction logic
 │   ├── userService.ts            # User-related API functions
