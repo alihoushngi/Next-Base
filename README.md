@@ -76,6 +76,7 @@ src/
 
 ├── store/                        # Global state management
 │   ├── index.ts                  # store file
+│   ├── provider.tsx              # create provider in file for next 15 "use client"
 │   ├── slice/                    # folder for create slices
 
 ├── services/                     # External API interaction logic
@@ -92,7 +93,6 @@ src/
 │   ├── messages.ts
 │   └── routes.ts
 
-├── middleware.ts                 # App-wide middleware (e.g. auth, role-based access)
 
 ├── styles/                       # Global CSS/Tailwind styles
 │   ├── globals.css               # Global styles (e.g. resets, base styles)
