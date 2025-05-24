@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import "@/styles/globals.css";
 import { ReduxProvider } from "@/store/provider";
+import { Toaster } from "react-hot-toast";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Next Base",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ReduxProvider>{children}</ReduxProvider>
+        <Toaster />
       </body>
     </html>
   );

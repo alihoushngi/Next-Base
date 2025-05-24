@@ -71,8 +71,13 @@ src/
 ├── hooks/                        # Global reusable custom React hooks
 
 ├── lib/                          # Low-level libraries and utilities
-│   ├── axios.ts                  # Axios instance with interceptors
-│   ├── auth.ts                   # Authentication helper functions
+│   ├── base/                     # Axios requests base
+│   │   ├── delete/
+│   │   ├── get/
+│   │   ├── patch/
+│   │   ├── post/
+│   │   └── put/
+│   ├── requestHelpers/           # helper functions
 
 ├── store/                        # Global state management
 │   ├── index.ts                  # store file
