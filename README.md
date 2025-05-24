@@ -52,7 +52,6 @@ src/
 │   │   │   └── register/route.ts # Register API route
 │   │   └── user/
 │   │       └── route.ts          # User data API route
-│   └── sitemap.xml/route.ts      # Dynamic sitemap for SEO
 
 ├── components/                   # Reusable UI components
 │   ├── ui/                       # Buttons, inputs, forms, etc.

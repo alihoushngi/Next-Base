@@ -25,6 +25,7 @@
     "bun": "^1.2.13",
     "cookies-next": "^5.1.0",
     "next": "15.3.2",
+    "next-secure-headers": "^2.2.0",
     "next-seo": "^6.8.0",
     "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
