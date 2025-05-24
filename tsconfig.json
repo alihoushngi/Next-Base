@@ -1,40 +1,40 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true,
-    "strictBindCallApply": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true,
-    "forceConsistentCasingInFileNames": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "useUnknownInCatchVariables": true,
-    "baseUrl": ".",
+    "target": "ES2017", // Set the JavaScript version for output
+    "lib": ["dom", "dom.iterable", "esnext"], // Include libraries for DOM and modern JavaScript features
+    "allowJs": true, // Allow JavaScript files in the project
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "strict": true, // Enable all strict type-checking options
+    "strictNullChecks": true, // Ensure null and undefined are handled properly
+    "noImplicitAny": true, // Raise error on expressions and declarations with an implied 'any' type
+    "noImplicitThis": true, // Raise error on 'this' expressions with an implied 'any' type
+    "alwaysStrict": true, // Parse in strict mode and emit "use strict" directive
+    "strictBindCallApply": true, // Check correct usage of bind, call, and apply methods
+    "strictFunctionTypes": true, // Enable strict checking of function types
+    "strictPropertyInitialization": true, // Ensure class properties are initialized in constructor
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in file names
+    "noUnusedLocals": true, // Report errors on unused local variables
+    "noUnusedParameters": true, // Report errors on unused function parameters
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough between switch cases
+    "noEmit": true, // Do not emit output files; only perform type checking
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "module": "esnext", // Use modern ECMAScript module system
+    "moduleResolution": "bundler", // Use modern module resolution for bundlers like Turbopack
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+    "isolatedModules": true, // Ensure each file is treated as a separate module
+    "jsx": "preserve", // Preserve JSX syntax for Next.js processing
+    "incremental": true, // Enable incremental builds for faster recompilation
+    "useUnknownInCatchVariables": true, // Use 'unknown' instead of 'any' for catch clause variables
+    "baseUrl": ".", // Base directory to resolve non-relative module names
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"] // Define alias for cleaner imports (e.g. @/components)
     },
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Enable Next.js specific TypeScript plugin
       }
     ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"], // Include TypeScript and Next.js related files
+  "exclude": ["node_modules"] // Exclude node_modules folder from compilation
 }
