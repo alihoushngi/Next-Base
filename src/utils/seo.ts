@@ -12,7 +12,7 @@ export const defaultMetadata: Metadata = {
   ],
   keywords: ["Next.js", "Boilerplate", "SEO", "React", "Web development"],
   // viewport: "width=device-width, initial-scale=1",
-  // themeColor: "#317EFB",
+  // themeColor: "#000000",
   robots: {
     index: true,
     follow: true,
