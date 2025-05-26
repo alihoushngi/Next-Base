@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://yourwebsitedomain.com
+Host: https://nextbase.ir
 
 # Sitemaps
-Sitemap: https://yourwebsitedomain.com/sitemap.xml
+Sitemap: https://nextbase.ir/sitemap.xml

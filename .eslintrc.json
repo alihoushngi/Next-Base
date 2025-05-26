@@ -1,5 +1,11 @@
 {
   "root": true,
+  "ignorePatterns": [
+    "public/**/*",
+    "README.md",
+    "package.json",
+    "package-lock.json"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest", // Allows using the latest ECMAScript features

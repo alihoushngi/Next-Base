@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://yourwebsitedomain.com/about</loc><lastmod>2025-05-24T22:38:49.672Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://yourwebsitedomain.com</loc><lastmod>2025-05-24T22:38:49.673Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://yourwebsitedomain.com/contact</loc><lastmod>2025-05-24T22:38:49.673Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://yourwebsitedomain.com/dashboard/settings</loc><lastmod>2025-05-24T22:38:49.673Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://yourwebsitedomain.com/dashboard</loc><lastmod>2025-05-24T22:38:49.673Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://yourwebsitedomain.com/custom-page</loc><lastmod>2025-05-24T22:38:49.673Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nextbase.ir/contact</loc><lastmod>2025-05-26T21:10:59.031Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nextbase.ir</loc><lastmod>2025-05-26T21:10:59.034Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nextbase.ir/dashboard/settings</loc><lastmod>2025-05-26T21:10:59.034Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nextbase.ir/dashboard</loc><lastmod>2025-05-26T21:10:59.034Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nextbase.ir/about</loc><lastmod>2025-05-26T21:10:59.034Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://nextbase.ir/custom-page</loc><lastmod>2025-05-26T21:10:59.034Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

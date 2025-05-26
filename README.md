@@ -125,7 +125,7 @@ src/
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/next-base.git
+git clone https://github.com/alihoushngi/Next-Base.git
 cd next-base
 npm install
 npm run dev
