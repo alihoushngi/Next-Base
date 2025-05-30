@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
+// /* eslint-disable @typescript-eslint/no-require-imports */
 module.exports = {
   semi: true,
   tabWidth: 2,

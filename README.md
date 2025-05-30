@@ -28,8 +28,7 @@ Welcome to **Next Base**, a powerful and developer-friendly boilerplate to jump 
 
 public/
 ├── images/
-├── icons/
-└── fonts/
+└── screenshots/                   # add for seo
 
 src/
 ├── app/                           # App routes, layouts, and route handlers (App Router)
@@ -48,10 +47,14 @@ src/
 │   │       └── not-found.tsx     # Custom 404 page only for this section
 │   ├── api/                      # API routes using Next.js route handlers
 │   │   ├── auth/
-│   │   │   └── login/route.ts    # Login API route
+│   │   │   ├── login/route.ts    # Login API route
 │   │   │   └── register/route.ts # Register API route
 │   │   └── user/
 │   │       └── route.ts          # User data API route
+
+├── assets/                       # add fonts and logo and icon here
+│   ├── fonts/
+│   └── icons/
 
 ├── components/                   # Reusable UI components
 │   ├── ui/                       # Buttons, inputs, forms, etc.
@@ -65,7 +68,7 @@ src/
 │   │   ├── services/             # Auth API logic (e.g. login, register)
 │   │   ├── types.ts              # Auth-related TypeScript types
 │   │   └── validation.ts         # Form validation schema for auth
-│   ├── blog/                     # Blog feature module
+│   └── blog/                     # Blog feature module
 
 ├── hooks/                        # Global reusable custom React hooks
 
@@ -76,15 +79,15 @@ src/
 │   │   ├── patch/
 │   │   ├── post/
 │   │   └── put/
-│   ├── requestHelpers/           # helper functions
+│   └── requestHelpers/           # helper functions
 
 ├── store/                        # Global state management
 │   ├── index.ts                  # store file
 │   ├── provider.tsx              # create provider in file for next 15 "use client"
-│   ├── slice/                    # folder for create slices
+│   └── slice/                    # folder for create slices
 
 ├── services/                     # External API interaction logic
-│   ├── userService.ts            # User-related API functions
+│   └── userService.ts            # User-related API functions
 
 ├── types/                        # Global TypeScript types and interfaces
 │   ├── api.d.ts                  # API-specific types
