@@ -33,8 +33,16 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "typeRoots": ["./types", "./node_modules/@types"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "tailwind.config.js",
+    "postcss.config.js"
+  ],
   "exclude": ["node_modules"]
 }

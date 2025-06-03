@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr" className={`${FiraFont.className}`}>
+    <html lang="en" dir="ltr" className={`${FiraFont.className} bg-primary`}>
       <body>
         <RegisterSW />
         <Suspense fallback={null}>

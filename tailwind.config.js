@@ -1,5 +1,3 @@
-import scrollbar from "tailwind-scrollbar";
-import animate from "tailwindcss-animate";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,9 +5,10 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/Search/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/Search/**/*.{js,ts,jsx,tsx,mdx}",
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
 
   theme: {
@@ -87,8 +86,5 @@ module.exports = {
   },
 
   // 🧩 Optional Tailwind plugins
-  plugins: [
-    scrollbar, // Adds utilities to style scrollbars using Tailwind classes
-    animate, // Adds prebuilt animation utilities like fade, zoom, slide
-  ],
+  plugins: [],
 };
