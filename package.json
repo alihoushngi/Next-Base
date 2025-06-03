@@ -11,7 +11,8 @@
     "lint:fix": "eslint --fix './**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "staged:lint": "eslint --fix",
-    "staged:format": "prettier ./ --write  --config ./.prettierrc"
+    "staged:format": "prettier ./ --write  --config ./.prettierrc",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -53,7 +54,7 @@
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-prettier": "^5.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.0.0",
+    "lint-staged": "^16.1.0",
     "postcss": "^8.5.3",
     "postcss-import": "^16.1.0",
     "prettier": "^3.5.3",
