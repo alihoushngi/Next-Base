@@ -8,17 +8,18 @@ Welcome to **Next Base**, a powerful and developer-friendly boilerplate to jump 
 
 ## 🧰 Tech Stack
 
-- ⚡ [Next.js](https://nextjs.org/)
-- 🔷 [TypeScript](https://www.typescriptlang.org/)
-- 🌈 [Tailwind CSS](https://tailwindcss.com/)
-- 🧠 [Redux Toolkit](https://redux-toolkit.js.org/)
-- 🌐 [Axios](https://axios-http.com/)
-- 📄 [dotenv](https://www.npmjs.com/package/dotenv)
-- 🔧 [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
-- 🐶 [Husky](https://typicode.github.io/husky) + [Lint-Staged](https://github.com/okonet/lint-staged)
-- 🔍 [next-seo](https://github.com/garmeeh/next-seo)
-- 🧃 [React Toastify](https://fkhadra.github.io/react-toastify/)
-- 🎨 [React Icons](https://react-icons.github.io/react-icons/)
+- ⚡ [Next.js](https://nextjs.org/) – React framework for production
+- 🔷 [TypeScript](https://www.typescriptlang.org/) – Strongly typed JavaScript
+- 🌈 [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework
+- 🌙 [next-themes](https://github.com/pacocoursey/next-themes) – Seamless dark/light mode support with Tailwind
+- 🧠 [Redux Toolkit](https://redux-toolkit.js.org/) – Modern state management with Redux
+- 🌐 [Axios](https://axios-http.com/) – Promise-based HTTP client
+- 📄 [dotenv](https://www.npmjs.com/package/dotenv) – Environment variable management
+- 🔧 [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) – Linting and code formatting
+- 🐶 [Husky](https://typicode.github.io/husky) + [Lint-Staged](https://github.com/okonet/lint-staged) – Git hooks and pre-commit checks
+- 🔍 [next-seo](https://github.com/garmeeh/next-seo) – SEO utilities for Next.js
+- 🧃 [React Toastify](https://fkhadra.github.io/react-toastify/) – Notifications and toasts
+- 🎨 [React Icons](https://react-icons.github.io/react-icons/) – Popular icons as React components
 
 ---
 
