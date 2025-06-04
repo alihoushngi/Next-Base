@@ -35,6 +35,12 @@
     "tab.inactiveForeground": "#484848"
   },
 
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit"
+  },
+
   //  START WITH README.MD FILE ____________________________
   "workbench.startupEditor": "readme",
 
