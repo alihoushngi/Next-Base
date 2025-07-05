@@ -14,22 +14,22 @@ export const ThemeSwitcher = () => {
   if (!mounted) return null;
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-2 text-sm font-medium">
       <button
         onClick={() => setTheme("light")}
-        className={`${theme === "light" ? "font-bold" : ""}`}
+        className={`pl-3 pr-5 py-1 rounded-3xl transition-all duration-300 ${theme === "light" ? "border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50" : "hover:bg-white hover:text-black"}`}
       >
         ☀️ Light
       </button>
       <button
         onClick={() => setTheme("dark")}
-        className={`${theme === "dark" ? "font-bold" : ""}`}
+        className={`pl-3 pr-5 py-1 rounded-3xl transition-all duration-300 ${theme === "dark" ? "border-gray-500 bg-gray-800 border-2 hover:bg-black hover:text-white" : "hover:border-blue-300 hover:bg-gray-50 border-2 border-transparent"}`}
       >
         🌙 Dark
       </button>
       <button
         onClick={() => setTheme("system")}
-        className={`${theme === "system" ? "font-bold" : ""}`}
+        className={`pl-3 pr-5 py-1 rounded-3xl transition-all duration-300 ${theme === "system" ? "border-blue-800 text-white bg-blue-800 border-2" : "hover:bg-blue-800 hover:text-white"}`}
       >
         💻 System
       </button>

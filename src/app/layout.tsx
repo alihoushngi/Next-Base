@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { ReduxProvider } from "@/store/provider";
-import { Toaster } from "react-hot-toast";
 import { defaultMetadata } from "@/utils/seo";
+import type { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 
-import "@/styles/globals.css";
-import RegisterSW from "@/components/layout/RegisterSW";
-import { Suspense } from "react";
 import { FiraFont } from "@/app/font";
+import RegisterSW from "@/components/layout/RegisterSW";
+import "@/styles/globals.css";
+import { Suspense } from "react";
 
 export const metadata: Metadata = defaultMetadata;
 
