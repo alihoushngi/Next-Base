@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Button from "@/components/shared/Button/Button";
 
 const LandingPage = () => {
   return (
@@ -14,14 +14,15 @@ const LandingPage = () => {
           away.
         </p>
       </div>
-      <Link
+      <Button
         href="https://github.com/alihoushngi/Next-Base"
         target="_blank"
         aria-label="github link"
-        className="pl-3 pr-5 py-1 rounded-3xl w-fit m-auto transition-all duration-300 border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50 dark:hover:bg-black dark:hover:text-white dark:border-gray-500 dark:bg-gray-800"
+        link
+        className="m-auto pl-3 pr-5"
       >
         Get Started on GitHub
-      </Link>
+      </Button>
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full text-left flex flex-col gap-2 justify-start bg-white dark:bg-black p-4 rounded-ss-xl rounded-se-xl">
           <h3 className="font-bold text-xl">
@@ -79,14 +80,15 @@ const LandingPage = () => {
           </p>
         </div>
         <div className="w-full mt-4 flex justify-start">
-          <Link
+          <Button
             href="https://github.com/alihoushngi/Next-Base/tree/main/src"
             target="_blank"
+            link
             aria-label="github folders link"
-            className="pl-3 pr-5 py-1 rounded-3xl w-fit transition-all duration-300 border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50 dark:hover:bg-black dark:hover:text-white dark:border-gray-500 dark:bg-gray-800"
+            className="m-auto pl-3 pr-5"
           >
             See More on GitHub
-          </Link>
+          </Button>
         </div>
       </div>
       <div className="flex flex-col justify-center items-center w-full">
