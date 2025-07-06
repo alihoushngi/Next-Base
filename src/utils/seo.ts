@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
 
 export const defaultMetadata: Metadata = {
-  title: "Next Base | Skip setup. Start building. ⚡",
+  title: "Next Base | Skip setup. Start building. ⚡ | Ali Hooshangi",
   description:
     "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
   manifest: "/manifest.webmanifest",
   authors: [
     {
       name: "Ali",
-      url: "https://your-website-or-profile.com",
+      url: "https://portfolio-v2-orcin-phi.vercel.app/",
     },
   ],
-  keywords: ["Next.js", "Boilerplate", "SEO", "React", "Web development"],
+  keywords: [
+    "Next.js",
+    "Boilerplate",
+    "SEO",
+    "React",
+    "Web development",
+    "ali hooshangi",
+    "ali houshangi",
+    "علی هوشنگی",
+    "frontend developer",
+  ],
   // viewport: "width=device-width, initial-scale=1",
   // themeColor: "#000000",
   robots: {
@@ -22,14 +32,14 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fa_IR",
-    url: "https://nextbase.dev/",
+    url: "https://next-base-puce.vercel.app/",
     siteName: "Next Base",
     title: "Next Base",
     description:
       "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
     images: [
       {
-        url: "https://nextbase.dev/images/og-image.jpg",
+        url: "https://next-base-puce.vercel.app/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Next Base - Boilerplate for Next.js projects",
@@ -42,7 +52,7 @@ export const defaultMetadata: Metadata = {
     description:
       "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
     creator: "@nextbase",
-    images: ["https://nextbase.dev/images/og-image.jpg"],
+    images: ["https://next-base-puce.vercel.app/images/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
