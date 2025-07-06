@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: var(--font-fira);
+}
+
+html.font-fa {
+  font-family: var(--font-vazir);
+}

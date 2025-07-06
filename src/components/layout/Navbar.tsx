@@ -1,3 +1,4 @@
+import LanguageSwitcher from "@/components/shared/I18n/LanguageSwitcher";
 import { ThemeSwitcher } from "@/components/shared/ThemeSwitcher";
 
 const Navbar = () => {
@@ -5,6 +6,7 @@ const Navbar = () => {
     <nav className="w-full flex justify-between items-center px-6 py-4 sticky top-0 bg-white dark:bg-black">
       <span className="uppercase font-black">Next Base</span>
       <ThemeSwitcher />
+      <LanguageSwitcher />
     </nav>
   );
 };
