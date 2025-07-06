@@ -1,4 +1,4 @@
-import LanguageSwitcher from "@/components/shared/I18n/LanguageSwitcher";
+import LanguageSwitcher from "@/components/shared/Language/LanguageSwitcher";
 import { ThemeSwitcher } from "@/components/shared/ThemeSwitcher";
 
 const Navbar = () => {

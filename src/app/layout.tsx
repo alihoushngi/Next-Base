@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 import { FiraFont, VazirFont } from "@/app/font";
 import RegisterSW from "@/components/layout/RegisterSW";
-import I18nProvider from "@/components/shared/I18n/I18nProvider";
+import I18nProvider from "@/components/shared/Language/I18nProvider";
 import "@/styles/globals.css";
 import { Suspense } from "react";
 
