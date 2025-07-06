@@ -7,7 +7,7 @@ import { SiGmail } from "react-icons/si";
 import { TbBrandGithubFilled } from "react-icons/tb";
 
 const Footer = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("footer");
   const isFa = i18n.language === "fa";
 
   return (
@@ -17,10 +17,10 @@ const Footer = () => {
           <h4
             className={`font-bold text-2xl ${isFa ? "text-right" : "text-left"}`}
           >
-            {t("footer.greeting")}
+            {t("greeting")}
           </h4>
           <p className={`font-light text-base ${isFa ? "text-justify" : ""}`}>
-            {t("footer.description")}
+            {t("description")}
           </p>
           <div className="flex w-full justify-start items-start text-xl gap-2">
             <Button
@@ -52,8 +52,8 @@ const Footer = () => {
         <div
           className={`w-full px-6 py-12 rounded-xl dark:bg-gray-800 bg-slate-50 ${isFa ? "text-right" : "text-left"}`}
         >
-          <p>{t("footer.cta")}</p>
-          <q>{t("footer.quote")}</q>
+          <p>{t("cta")}</p>
+          <q>{t("quote")}</q>
         </div>
       </div>
     </footer>

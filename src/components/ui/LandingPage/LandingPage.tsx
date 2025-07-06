@@ -3,7 +3,7 @@ import Button from "@/components/shared/Button/Button";
 import { useTranslation } from "react-i18next";
 
 const LandingPage = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("landing");
   const isFa = i18n.language === "fa";
 
   return (

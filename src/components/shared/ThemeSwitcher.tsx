@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 export const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme();
-  const { i18n, t } = useTranslation();
+  const { i18n, t } = useTranslation("navbar");
   const [mounted, setMounted] = useState(false);
 
   const isFa = i18n.language === "fa";
@@ -31,7 +31,7 @@ export const ThemeSwitcher = () => {
             : "hover:bg-white hover:text-black"
         }`}
       >
-        ☀️ {t("theme.light")}
+        ☀️ {t("light")}
       </button>
       <button
         onClick={() => setTheme("dark")}
@@ -41,7 +41,7 @@ export const ThemeSwitcher = () => {
             : "hover:border-blue-300 hover:bg-gray-50 border-2 border-transparent"
         }`}
       >
-        🌙 {t("theme.dark")}
+        🌙 {t("dark")}
       </button>
       <button
         onClick={() => setTheme("system")}
@@ -51,7 +51,7 @@ export const ThemeSwitcher = () => {
             : "hover:bg-blue-800 hover:text-white"
         }`}
       >
-        💻 {t("theme.system")}
+        💻 {t("system")}
       </button>
     </div>
   );

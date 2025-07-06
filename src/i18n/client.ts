@@ -1,8 +1,8 @@
 // src/i18n/client.ts
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import HttpBackend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
+import HttpBackend from "i18next-http-backend";
+import { initReactI18next } from "react-i18next";
 
 void i18n
   .use(HttpBackend)
@@ -11,7 +11,7 @@ void i18n
   .init({
     fallbackLng: "fa",
     supportedLngs: ["fa", "en"],
-    ns: ["common"],
+    ns: ["common", "landing", "footer", "navbar"],
     defaultNS: "common",
     debug: false,
     interpolation: {
