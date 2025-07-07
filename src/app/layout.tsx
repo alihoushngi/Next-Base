@@ -1,11 +1,12 @@
-import { ReduxProvider } from "@/store/provider";
+// PLACEHOLDER_REDUX_IMPORT
 import { defaultMetadata } from "@/utils/seo";
 import type { Metadata } from "next";
-import { Toaster } from "react-hot-toast";
+// PLACEHOLDER_TOASTER_IMPORT
 
 import { FiraFont, VazirFont } from "@/app/font";
 import RegisterSW from "@/components/layout/RegisterSW";
-import I18nProvider from "@/components/shared/Language/I18nProvider";
+// PLACEHOLDER_I18N_IMPORT
+
 import "@/styles/globals.css";
 import { Suspense } from "react";
 
@@ -25,11 +26,13 @@ export default function RootLayout({
       <body>
         <RegisterSW />
         <Suspense fallback={null}>
-          <ReduxProvider>
-            <I18nProvider>{children}</I18nProvider>
-          </ReduxProvider>
+          {/* PLACEHOLDER_REDUX_PROVIDER_START */}
+          {/* PLACEHOLDER_I18N_PROVIDER_START */}
+          {children}
+          {/* PLACEHOLDER_I18N_PROVIDER_END */}
+          {/* PLACEHOLDER_REDUX_PROVIDER_END */}
         </Suspense>
-        <Toaster />
+        {/* PLACEHOLDER_TOASTER */}
       </body>
     </html>
   );

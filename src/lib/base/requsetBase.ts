@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from "axios";
 import { getCookie } from "cookies-next";
-import toast from "react-hot-toast";
+// PLACEHOLDER_TOASTER_IMPORT
 
 import { IRequestOption, IResponse } from "./requestBase.types";
 
@@ -47,7 +47,7 @@ export async function sendRequest<T, D = unknown>({
 
   axiosInstance.interceptors.response.use(
     (res) => {
-      toast.success("درخواست با موفقیت انجام شد");
+      // PLACEHOLDER_TOASTER_SUCCESS_MESSAGE
       return res;
     },
     (error) => {
@@ -61,10 +61,10 @@ export async function sendRequest<T, D = unknown>({
     return response;
   } catch (error: unknown) {
     if (error instanceof Error) {
-      toast.error(error.message || "خطایی رخ داده");
+      // PLACEHOLDER_TOASTER_ERROR1_MESSAGE
       errorHandler(error);
     } else {
-      toast.error("خطای ناشناخته");
+      // PLACEHOLDER_TOASTER_ERROR2_MESSAGE
       errorHandler(new Error("Unknown error"));
     }
     return Promise.reject(error);

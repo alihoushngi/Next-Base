@@ -1,13 +1,6 @@
-import withPWA from "next-pwa";
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { NextConfig } from "next";
-
-const withPwa = withPWA({
-  dest: "public",
-  disable: process.env.NODE_ENV === "development",
-  register: true,
-  skipWaiting: true,
-  buildExcludes: [/middleware-manifest\.json$/, /app-build-manifest\.json$/],
-});
+// PLACEHOLDER_PWA_IMPORT
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
@@ -40,4 +33,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default withPwa(nextConfig);
+// PLACEHOLDER_EXPORT_CONFIG
