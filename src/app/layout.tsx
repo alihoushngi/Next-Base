@@ -22,6 +22,7 @@ export default function RootLayout({
     <html
       lang="fa"
       dir="rtl"
+      suppressHydrationWarning
       className={`${FiraFont.variable} ${VazirFont.variable} font-fa`}
     >
       <body>
