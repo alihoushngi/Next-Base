@@ -2,6 +2,9 @@
 import type { NextConfig } from "next";
 // PLACEHOLDER_PWA_IMPORT
 
+// PWA config setup
+const withPwa = () => {};
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {
@@ -34,3 +37,4 @@ const nextConfig: NextConfig = {
 };
 
 // PLACEHOLDER_EXPORT_CONFIG
+export default nextConfig;
