@@ -9,4 +9,6 @@ export interface IButtonProps {
   onClick?: (
     event: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement>,
   ) => void;
+  copy?: boolean;
+  copyText?: string;
 }
