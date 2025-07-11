@@ -25,6 +25,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${FiraFont.variable} ${VazirFont.variable} font-fa`}
     >
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#317EFB" />
+        <link rel="icon" href="/icons/icon-192x192.png" />
+      </head>
       <body>
         <RegisterSW />
         <Suspense fallback={null}>
